@@ -1,0 +1,69 @@
+<meta http-equiv="refresh" content="1.0">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+
+</head>
+<body>
+    
+<h1>iniciando estudos ao DOM</h1>
+<p>aqui vai o resultado</p>
+
+<p>aprendendo a usar <strong>DOM</strong> em javascript.</p>
+
+<p>teste</p>
+
+<div id="divi">clique aqui</div>
+<div class="tentativa">mais uma, tentativa de 'querySelector' com 'class'. deu certo!</div>
+
+
+
+
+<script>
+
+// fizemos essa parte de baixo com tag
+
+    var p = window.document.getElementsByTagName('p')[2]
+    window.document.write(p.innerText)
+    p.style.color = 'blue'
+ 
+
+
+    var corpo = window.document.body
+    corpo.style.background = 'black'
+    corpo.style.color = 'green'
+
+
+
+
+
+// fizemos essa parte de baixo com id=''
+var divi = window.document.getElementById('divi')
+divi.style.background = 'blue'
+divi.style.color = 'white'
+divi.innerText = 'estou aguardando'
+
+
+
+var titulo = window.document.querySelector('h1')
+titulo.style.color ='yellow'
+
+
+
+var tentativa = window.document.querySelector('.tentativa')
+
+tentativa.style.color = 'purple'
+</script>
+
+
+
+
+
+</body>
+</html>
