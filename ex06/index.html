@@ -1,12 +1,180 @@
-<meta http-equiv="refresh" content="1.0">
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<style>
+
+    body{
+        background-color: rgba(230, 113, 30, 0.819);
+    }
+
+
+    div{
+        margin: 5px;
+    }
+/*     
+    div#area{
+        background-color: aquamarine;
+        color: rgba(230, 113, 30, 0.819);
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+    #teste{
+        background-color: blueviolet;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+#toque{
+        background-color: chartreuse;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+        font-size: 25px;
+        font-weight: bolder; */
+
+    #box{
+
+background-color: #00fa19;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+</style>
+
 </head>
 <body>
+
     
+
+<!-- bloco de teste
+<div id="teste" onclick="aperte()">
+
+    teste
+</div>
+
+
+<script>
+
+function aperte(){
+
+var teste = window.document.getElementById('teste')
+teste.innerText = 'conseguiu'
+teste.style.background='green'
+}
+
+</script>
+
+bloco de interaja -->
+<!-- <div id="area" onclick="clicar()">
+
+    interaja...
+
+ </div>
+
+    <script>
+function clicar() {
+
+  var area = window.document.getElementById('area')
+
+area.innerText = 'clicou!'
+area.style.background = 'red'
+}
+    </script> -->
+
+
+
+
+
+
+<!-- 
+bloco de toque -->
+
+<!-- <div id="toque" onclick="pressione()">
+
+    toque...
+    
+    </div>
+
+<script>
+
+    function pressione(){
+        var toque = window.document.getElementById('toque')
+        toque.innerText='correto'
+        toque.style.background='blue'
+    }
+    
+    </script>  -->
+
+<!-- USANDO MAIS DE UMA FUNCTION -->
+<!-- <div id="box" onclick="pressionar()" onmouseenter="entrar()" onmouseout="sair()">
+
+
+
+</div>
+
+<script>
+
+    var box =window.document.getElementById('box')
+
+
+    function pressionar() {
+    box.style.background='red'
+    box.innerText='clicou'
+}
+function entrar() {
+    box.innerText='entrou'
+    
+}
+function sair() {
+    box.innerText='saiu'
+    box.style.background='#00fa19'
+}
+</script> -->
+
+
+<!-- fazendo de uma forma que deixe a nossa parte de html mais clean; usando o '.adddeventlistenner' -->
+
+<!-- parte de html abaixo -->
+ <div id="box"> 
+
+<!-- parte de JS abaixo -->
+<script>
+    var box =window.document.getElementById('box')
+box.addEventListener('click',pressionar)
+box.addEventListener('mouseenter',entrar)
+box.addEventListener('mouseout',sair)
+   
+
+function pressionar() {
+    box.style.background='red'
+    box.innerText='clicou'
+}
+function entrar() {
+    box.innerText='entrou'
+    
+}
+function sair() {
+    box.innerText='saiu'
+    box.style.background='#00fa19'
+}
+</script> 
 </body>
 </html>
