@@ -1,0 +1,64 @@
+<meta http-equiv="refresh" content="300.0">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+#box{
+
+background-color: blueviolet;
+width: 200px;
+height: 200px;
+
+}
+</style>
+
+</head>
+<body>
+
+
+<h1>soma de valores</h1>
+
+   <input type="number" name="txtn1" id="txtn1"> +
+   <input type="number" name="txtn2" id="txtn2">
+   <input type="button" value="somar" onclick="somar()">
+   <div id="res">resultado</div>
+   <script>
+function somar() {
+var tn1 = window.document.getElementById('txtn1')
+var tn2 = window.document.querySelector('input#txtn2')
+var res = window.document.getElementById('res')
+var n1 = Number(tn1.value)
+var n2 = Number(tn2.value)
+var s = n1 + n2 
+res.innerHTML = ` a soma dos valores ${n1}  somado com ${n2} da o resultado ${s}`
+
+}
+   </script> 
+   
+<input type="number" name="blc1" id="blc1">
+<input type="number" name="blc2" id="blc2">
+<input type="button" value="ver resultado" onclick="resultado()">
+<div id="re">valor</div>
+
+<script>
+function resultado() {
+
+var bl1= window.document.getElementById('blc1')
+var bl2 = window.document.getElementById('blc2')
+var re = window.document.getElementById('re')
+var bloco1 = Number(bl1.value)
+var bloco2 = Number(bl2.value)
+var so = bloco1 + bloco2
+re.innerHTML=`a soma dos valores ${bloco1} + o valor de ${bloco2} se resulta em ${so}`
+
+}
+
+</script> 
+
+
+</body>
+</html>
