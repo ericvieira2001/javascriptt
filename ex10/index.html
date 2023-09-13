@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detram</title>
+</head>
+<body>
+    <h1>programa de multas</h1>
+
+
+
+ <strong>insira a velocidade:</strong><input type="number" name="" id="velocidade">
+<input type="button" value="consulte" onclick="verificar()">
+<div id="divi"></div>
+<script>
+function verificar(){
+
+var veloc = window.document.querySelector("#velocidade")
+var divi = window.document.querySelector("#divi")
+var vel = Number(veloc.value)
+divi.innerHTML = `<p>velocidade era de <strong>${vel}</strong> km/h</p>`
+
+if(vel > 60){
+    divi.innerHTML += "<p>você foi multado por excesso de velocidade em via proibida</p>"
+}
+
+
+divi.innerHTML += '<p>sempre use cinto de segurança</p>'
+
+}
+
+
+
+
+</script>
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
