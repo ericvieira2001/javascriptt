@@ -6,7 +6,7 @@
     <title>Detram</title>
 </head>
 <body>
-    <h1>programa de multas</h1>
+    <h1>digite seu país de origem</h1>
 
 
 
@@ -34,9 +34,46 @@ divi.innerHTML += '<p>sempre use cinto de segurança</p>'
 
 
 </script>
+ 
+
+<!-- <input type="number" name="velocidade" id="velocidade">
+<input type="button" value="iniciar" onclick="consultar()">
+<div id="resul"></div>
+
+
+
+<script>
+
+function consultar() {
+
+var vel = document.querySelector('#velocidade')
+var res = document.querySelector('#resul')
+var veloc = Number(vel.value)
+res.innerHTML = `sua velocidade ${veloc}km/h`
+
+
+if(veloc > 65){
+    res.innerHTML += '<p>voce foi multado</p>'
+}else{
+    res.innerHTML+= '<p>voce esta indo em velocidade segura!</p>'
+}
+res.innerHTML+='<p>uma boa noite!</p>'
+
+}
+
 
 
 </script>
+
+
+
+
+
+
+
+
+
+
 
 
 

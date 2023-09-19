@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nações</title>
+
+    <style>
+
+        body{
+            text-align: center;
+            margin: 15px;
+        }
+        ul{
+            text-align:left;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Digite sua nacionalidade</h1>
+
+<ul>
+    <li>sempre a primeira letra maiuscula;</li>
+    <li>apenas países;</li>
+    <li>digite e depois clique em 'consultar'.</li>
+</ul>
+
+
+    <input type="text" name="" id="nacionalidade">
+<input type="button" value="consultar" onclick="verificar()" >
+<div id="res"></div>
+
+<script>
+function verificar(){
+
+var nacao = document.querySelector('#nacionalidade')
+var resul = document.querySelector('#res')
+var nacion =(nacao.value)
+resul.innerHTML=`seu país é ${nacion}`
+if(nacion == 'Brasil'){
+    resul.innerHTML += '<p>você é brasileiro(a)!</p>'
+}else{
+    resul.innerHTML += `<p><strong>${nacion}</strong>,você é um estrangeiro(a).</p>` 
+}
+
+
+
+
+}
+
+
+</script>
+</body>
+</html>
