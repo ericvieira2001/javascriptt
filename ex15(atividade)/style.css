@@ -1,0 +1,37 @@
+body{
+    background-color:rgba(62, 62, 229, 0.768) ;
+font-family: 'Times New Roman', Times, serif;
+color: black;
+}
+header{
+text-align: center;
+color: antiquewhite;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+section{
+margin: auto;
+background-color: white;
+border-radius: 10px;
+padding: 15px;
+width: 500px;
+box-shadow: 5px 5px 5px black;
+color: black;
+}
+
+div{
+    text-align: center;
+    padding: 10px;
+    
+}
+#foto{
+    width: 250px;  
+    height: 250px;
+    border-radius: 50%;
+}
+
+footer{
+color: antiquewhite;
+text-align: center;
+font-style: italic;
+
+}
