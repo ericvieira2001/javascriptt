@@ -4,7 +4,7 @@ function verificar(){
     var forano = document.getElementById('txtano')
     var res = document.querySelector('div#res')
     if(forano.value.length == 0 || Number(forano.value) > ano){
-        window.alert("erro! tente novamente...")
+        window.alert("erro! tente novamente...preencha todos os campos!")
     } else {  
 var fsex = document.getElementsByName('sex')
 var idade = ano - Number(forano.value)
@@ -12,7 +12,7 @@ var genero = ''
 var img = document.createElement('img')
 img.setAttribute('id','foto')
 if(fsex[0].checked){
-    genero = 'homem'
+    genero = 'Masculino'
 if(idade >= 0 && idade < 10) {
 img.setAttribute('src','bebemenino.jpg')
 }else if (idade < 21){
@@ -23,7 +23,7 @@ img.setAttribute('src','bebemenino.jpg')
     img.setAttribute('src','idoso.jpg')
 }
 }else if (fsex[1].checked) {
-    genero = 'mulher'
+    genero = 'Feminino'
     if(idade >= 0 && idade < 10) {
         img.setAttribute('src','bebemeninaa.jpg')
     }else if (idade < 21){
@@ -35,7 +35,7 @@ img.setAttribute('src','bebemenino.jpg')
     } 
 }
 res.style.borderradius = 
-res.innerHTML = `a idade calculada é :${idade} e sexo ${genero}`
+res.innerHTML = `a idade calculada é :<strong>${idade} anos e sexo ${genero}</strong>`
 res.appendChild(img)
     }
     }
